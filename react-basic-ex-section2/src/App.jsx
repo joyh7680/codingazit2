@@ -20,12 +20,6 @@ export default function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/youtube" element={<Youtube />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Home />
-          <Members />
-          <Notice />
-          <Gallery />
-          <Youtube />
-          <Contact /> */}
       </Routes>
 
       <Footer />
