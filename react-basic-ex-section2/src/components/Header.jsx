@@ -12,11 +12,11 @@ export default function Header() {
 
   return (
     <header>
+      {/* //header start */}
       <h1>
         {/* <a href="/">CODING AZIT</a> */}
         <Link to="/"> CODING AZIT </Link>
       </h1>
-
       <nav>
         {/* gnb */}
         <ul>
@@ -42,6 +42,7 @@ export default function Header() {
           ))}
         </span>
       </nav>
+      {/* header end// */}
     </header>
   );
 }
