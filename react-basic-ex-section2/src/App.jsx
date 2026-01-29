@@ -13,9 +13,11 @@ export default function App() {
   return (
     <>
       <Header />
-      {/* //컨텐츠 들어오는곳 */}
+      <br></br>
+
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* /members 주소로 들어오면 Members 컴포넌트 실행 */}
         <Route path="/members" element={<Members />} />
         <Route path="/notice" element={<Notice />} />
         <Route path="/gallery" element={<Gallery />} />
@@ -24,7 +26,7 @@ export default function App() {
         <Route path="/youtube/:id" element={<YoutubeDetail />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* 컨텐츠 들어오는곳// */}
+
       <Footer />
     </>
   );
