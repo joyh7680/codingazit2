@@ -2,6 +2,19 @@
 @theme {
   --font-noto: 'Noto Sans KR', sans-serif;
   --font-orbitron: 'Orbitron', sans-serif;
+
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+
+  /* wiggle 키프레임 정의 */
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg)
+    }
+  }
 }
 body {
   padding: 30px;

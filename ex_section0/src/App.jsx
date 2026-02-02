@@ -1,11 +1,8 @@
 export default function App() {
   return (
-    <div>
-      <p className="font-sans">TEXT</p>
-      <p className="font-serif">TEXT</p>
-      <p className="font-mono">TEXT</p>
-      <p className="font-noto">TEXT</p>
-      <p className="font-orbitron">TEXT</p>
-    </div>
+    <>
+      {/* <div className="size-20 animate-spin bg-blue-500"></div> */}
+      <div className="size-20 animate-wiggle bg-blue-500"></div>
+    </>
   );
 }
