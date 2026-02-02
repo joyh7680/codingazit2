@@ -12,10 +12,10 @@
       transform: rotate(-10deg);
     }
     50% {
-      transform: rotate(10deg)
+      transform: rotate(10deg);
     }
   }
 }
 body {
-  padding: 30px;
+  /* padding: 30px; */
 }
