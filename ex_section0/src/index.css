@@ -1,1 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@theme {
+  --font-noto: 'Noto Sans KR', sans-serif;
+  --font-orbitron: 'Orbitron', sans-serif;
+}
+body {
+  padding: 30px;
+}
