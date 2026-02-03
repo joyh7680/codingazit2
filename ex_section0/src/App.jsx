@@ -1,23 +1,14 @@
-import Button from './assets/Button';
-
 export default function App() {
-  const btnArr = ['Menu1', 'Menu2', 'Menu3'];
+    {/* motion-safe 
+      : 동작 줄이기(Reduce Motion)" 옵션이 비활성화되어 있을 때만 스타일을 적용하겠다는 의미
+    윈도우 설정 > 접근성 > 에니메이션효과 끔 => motion-safe 적용 => 애니메이션 효과 적용 안됨
+    */}
 
   return (
     <>
-      {/* 각 버튼에 직접 text와 customStyle을 전달합니다. 개별적으로 스타일을 제어하고 싶을 때 사용 */}
-      <section className="mb-4 flex gap-4">
-        <Button text="button1" />
-        <Button text="button2" customStyle="bg-blue-500" />
-        <Button text="button3" customStyle="bg-blue-200 text-black" />
-      </section>
-
-      <section className="flex gap-4">
-        {/* btnArr.map()을 사용하여 배열 데이터를 순회하며 버튼을 생성 */}
-        {btnArr.map((el, idx) => {
-          return <Button key={idx} text={el} idx={idx} />;
-        })}
-      </section>
+      <div className="size-60 bg-red-500 hover:bg-blue-500 theme-transition"></div>
+      {/* <div className="size-60 bg-red-500 hover:bg-blue-500 motion-safe:transition-colors motion-safe:duration-1000"></div> */}
+      {/* 코드마다 motion-safe 적용하는 것은 비효율적  */}
     </>
   );
 }
