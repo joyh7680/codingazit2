@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-mode=dark] &));
+
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-noto: "Noto Sans", sans-serif;
+
+  --code-dark: oklch(0.2 0 0);
+  --code-light: oklch(0.95 0.005 50);
+  --code-point: oklch(0.9 0.4 330);
+
+  --color-dark: var(--code-dark);
+  --color-light: var(--code-light);
+  --color-point: var(--code-point);
+}
+
+/* 다크 모드 일때 덮어쓸 스타일 색상 변수 */
+[data-mode="dark"] {
+  --color-dark: var(--code-light);
+  --color-light: var(--code-dark);
+}
+
+@utility theme-transition {
+  @apply motion-safe:transition-colors motion-safe:duration-250 motion-safe:ease-in-out;
+}
+
+@layer base {
+  body {
+    @apply bg-light font-noto text-dark theme-transition;
+  }
+  a {
+    @apply text-inherit;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block w-auto cursor-pointer rounded-md border-none bg-dark px-8 py-2 text-sm text-light shadow-lg transition hover:bg-point hover:shadow-point/30;
+  }
+}
