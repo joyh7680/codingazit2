@@ -1,31 +1,28 @@
 @import 'tailwindcss';
 
-/* @theme: v4에서 변수를 정의하는 새로운 방식 */
 @theme {
-  --color-my: oklch(0.6 0.5 0);
 }
 
-/* @layer는 
-Tailwind가 생성하는 수만 가지 CSS 코드 사이에서 **"내가 쓴 코드의 우선순위(새치기 방지)를 정해주는 바구니"** */
 @layer base {
   body {
-    /* padding: 40px;
-    background-color: var(--color-my) */
-
-    /* @apply: 
-    기존의 유틸리티 클래스를 재사용하는 방식 
-    @apply는 한마디로 **"HTML에 길게 늘어놓은 유틸리티 클래스들을 CSS 파일 안으로 쏙 집어넣어 하나로 뭉쳐주는 도구
-    추천: 버튼, 입력창(Input), 카드 디자인처럼 정말 자주 반복되는 요소에만 @apply를 사용하세요.
-    */
-    @apply bg-my p-10;
+    @apply p-10;
   }
-  h1 {
-    @apply text-4xl font-bold text-black/80;
+}
+/*
+컴포넌트 레이어 : 여러가지 그룹화된 재활용 가능한 스타일 정의, 덮어씌우기 기능
+커스텀 유틸리티 : 내가 자주 써야하는 스타일을 유틸리티로 만들어서 사용, 덮어씌우기 불가 
+*/
+
+@layer components {
+  .bg-components {
+    @apply bg-red-500;
   }
 }
 
-@layer components {
-  .btn {
-    @apply m-4 inline-block rounded bg-black/70 px-2 py-1 font-bold text-white shadow-lg;
-  }
+@utility bg-utility {
+  @apply bg-blue-500;
+}
+
+@utility my-gradient {
+  @apply bg-linear-to-r from-black to-white;
 }

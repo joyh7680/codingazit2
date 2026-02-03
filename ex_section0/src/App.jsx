@@ -1,12 +1,12 @@
 export default function App() {
   return (
     <>
-      <h1>Hello, World!</h1>
-
-      <button className="btn">btn</button>
-      <a href="/" className="btn">
-        BUTTON2
-      </a>
+      <section className="space-y-10 *:size-60">
+        <div className="bg-components bg-black"></div>
+        {/* bg-utility 는 덮어씌우기 불가  */}
+        <div className="bg-black bg-utility"></div>
+        <div className="my-gradient"></div>
+      </section>
     </>
   );
 }
