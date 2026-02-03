@@ -1,18 +1,7 @@
 @import 'tailwindcss';
 
-/* 
-@layer는 "어디에 위치할 것인가
-ex) base, components, utilities
-
-@apply (스타일 적용)
-Tailwind의 유틸리티 클래스(p-10, bg-blue-500 등)를 일반 CSS 파일 안에서 그대로 가져다 쓰고 싶을 때 사용합니다.
-*/
 @layer base {
   body {
-    @apply p-10;
+    @apply bg-gray-200 p-10;
   }
-}
-
-@utility theme-transition {
-  @apply motion-safe:transition-all motion-safe:duration-1000;
 }
