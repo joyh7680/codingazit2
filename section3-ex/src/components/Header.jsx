@@ -5,7 +5,7 @@ import Sns from './items/Sns';
 export default function Header() {
   return (
     <header>
-      <Logo />
+      <Logo className="text-point" />
 
       <nav>
         <Gnb />
