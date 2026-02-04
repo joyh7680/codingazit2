@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import Layout from "../components/Layout";
+import { Link } from 'react-router-dom';
+import Layout from '../components/wrapper/Layout';
 
 export default function Youtube() {
   return (

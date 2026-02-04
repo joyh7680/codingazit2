@@ -1,7 +1,7 @@
-import Logo from './items/Logo';
-import Gnb from './items/Gnb';
-import Sns from './items/Sns';
-import { tw } from '../globals';
+import Logo from '../items/Logo';
+import Gnb from '../items/Gnb';
+import Sns from '../items/Sns';
+import { tw } from '../../globals';
 
 // 손이 많이 가는 단점이 있지만 유지보수, 재사용에 있어 리액트의 장점이 있다.
 

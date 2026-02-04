@@ -1,13 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Contact from "./pages/Contact";
-import Gallery from "./pages/Gallery";
-import Members from "./pages/Members";
-import Notice from "./pages/Notice";
-import Youtube from "./pages/Youtube";
-import YoutubeDetail from "./pages/YoutubeDetail";
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Footer from './components/blocks/Footer';
+import Header from './components/blocks/Header';
+import Contact from './pages/Contact';
+import Gallery from './pages/Gallery';
+import Members from './pages/Members';
+import Notice from './pages/Notice';
+import Youtube from './pages/Youtube';
+import YoutubeDetail from './pages/YoutubeDetail';
 
 export default function App() {
   return (

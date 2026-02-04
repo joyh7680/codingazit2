@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from '../components/wrapper/Layout';
 
 export default function Notice() {
   return (

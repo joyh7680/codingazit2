@@ -3,8 +3,8 @@
 URL에 들어있는 변수 값을 꺼내는 훅
 */
 //
-import { useParams } from "react-router-dom";
-import Layout from "../components/Layout";
+import { useParams } from 'react-router-dom';
+import Layout from '../components/wrapper/Layout';
 
 export default function YoutubeDetail() {
   const { id } = useParams();
