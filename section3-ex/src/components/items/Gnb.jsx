@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { tw } from '../../globals';
 import { twMerge } from 'tailwind-merge';

@@ -13,7 +13,6 @@ export default function App() {
   return (
     <>
       <Header />
-      <br></br>
 
       <Routes>
         <Route path="/" element={<Home />} />
