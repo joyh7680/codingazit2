@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className={css.header}>
-      <Logo className="text-point" />
+      <Logo className="" />
 
       <nav className={css.nav}>
         <div className={css.div}>
