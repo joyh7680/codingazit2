@@ -1,10 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @custom-variant dark (&:where([data-mode=dark] &));
 
 @theme {
-  --font-orbitron: "Orbitron", sans-serif;
-  --font-raleway: "Raleway", sans-serif;
-  --font-noto: "Noto Sans", sans-serif;
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
+  --font-noto: 'Noto Sans', sans-serif;
 
   --code-dark: oklch(0.2 0 0);
   --code-light: oklch(0.95 0.005 50);
@@ -16,7 +16,7 @@
 }
 
 /* 다크 모드 일때 덮어쓸 스타일 색상 변수 */
-[data-mode="dark"] {
+[data-mode='dark'] {
   --color-dark: var(--code-light);
   --color-light: var(--code-dark);
 }
