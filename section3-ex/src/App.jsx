@@ -17,12 +17,10 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* /members 주소로 들어오면 Members 컴포넌트 실행 */}
         <Route path="/members" element={<Members />} />
         <Route path="/notice" element={<Notice />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/youtube" element={<Youtube />} />
-        {/* 여기서 :id는 **“변수 자리”**야. */}
         <Route path="/youtube/:id" element={<YoutubeDetail />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
