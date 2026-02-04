@@ -1,18 +1,24 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
 import Notice from "./Notice";
 import NoticeDetail from "./NoticeDetail";
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* 공지사항 목록 */}
         <Route path="/notice" element={<Notice />} />
-        {/* :id는 URL 파라미터(동적 세그먼트) 라고 부르고,
-        /notice/1, /notice/2 처럼 들어오는 값에서 1, 2가 id로 매칭돼.
-        그래서 NoticeDetail 컴포넌트 안에서 useParams()로 꺼내 쓸 수 있음. */}
+        {/* 공지사항 상세 (id는 변수처럼 동작) */}
         <Route path="/notice/:id" element={<NoticeDetail />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
+export default App;
